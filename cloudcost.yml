@@ -1,0 +1,14 @@
+integrations:
+  - name: nri-flex
+    config:
+      name: aws-cost-explorer
+      interval: 86400
+      apis:
+        - name: cost_by_region
+          event_type: CloudCost
+          commands:
+            - run: python3 /opt/cloudcost/scripts/awscostfetcher.py
+          data_processing:
+            parse_json:
+              split_lines: true
+              root: "$[*]"
