@@ -20,3 +20,33 @@ With this integration, you can:
 - ✅ Handles long date ranges with chunked queries.
 - ✅ Includes New Relic Flex YAML config for scheduling ingestion.
 - ✅ Easy-to-build New Relic dashboards using NRQL queries.
+
+## 🏗️ Architecture
+
++------------------------+
+| AWS Cost Explorer API |
++----------+-------------+
+           |
+           v
++---------------------------+
+| awscostfetcher.py (Python)|
++---------------------------+
+           |
+           v
+  NDJSON events (daily cost)
+           |
+           v
++---------------------------+
+| New Relic Flex Integration|
++---------------------------+
+           |
+           v
++---------------------------+
+|  New Relic Custom Events  |
+|      (eventType: CloudCost)|
++---------------------------+
+           |
+           v
++---------------------------+
+| New Relic Dashboards & Alerts |
++---------------------------+
