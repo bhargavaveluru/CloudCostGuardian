@@ -47,6 +47,12 @@ This IAM role should have permissions such as:
 - Python3 installed with required libraries.
 - New Relic account.
 
+## Multi-Cloud Implementation
 
+Yes! Your Cloud Cost Guardian can be extended to Azure, GCP, and IBM Cloud, because:
+- All major clouds provide cost and usage APIs (Azure Cost Management API, GCP Billing API, IBM Cloud Usage Reports).
+- You can write similar ingestion scripts for those APIs.
+- New Relic Flex supports custom integrations, so you can collect data from any cloud provider.
+- This enables a multi-cloud cost monitoring solution.
 
 
