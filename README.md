@@ -41,7 +41,7 @@ This IAM role should have permissions such as:
 }
 ```
 
-##🔧 Prerequisites
+## 🔧 Prerequisites
 
 - EC2 instance with IAM role attached.
 - Python3 installed with required libraries.
