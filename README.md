@@ -11,3 +11,12 @@ With this integration, you can:
 - Set up alerts for unexpected spikes.
 - Visualize costs by region/service.
 - Optimize your AWS usage with data-driven insights.
+
+## ✨ Features
+
+- ✅ Automated daily cost retrieval for the past 365 days (configurable).
+- ✅ Cost data grouped by AWS service and region.
+- ✅ Output as newline-delimited JSON (NDJSON) for smooth Flex ingestion.
+- ✅ Handles long date ranges with chunked queries.
+- ✅ Includes New Relic Flex YAML config for scheduling ingestion.
+- ✅ Easy-to-build New Relic dashboards using NRQL queries.
