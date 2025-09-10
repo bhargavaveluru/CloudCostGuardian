@@ -47,9 +47,17 @@ This IAM role should have permissions such as:
 - Python3 installed with required libraries.
 - New Relic account.
 
+## 🚀 Scalability & Future Scope
+
+This solution is designed to scale beyond just cost data ingestion. It can be extended to include detailed insights into all AWS services in your subscription, such as:
+- Number of active EC2 instances and their statuses
+- Cluster details for ECS, EKS, and other container services
+- Usage metrics for services like RDS, Lambda, S3, and more
+- By leveraging New Relic Flex’s custom integrations, this platform can evolve into a comprehensive cloud resource and cost monitoring system, providing holistic visibility and enabling more granular optimization across your entire AWS environment.
+
 ## Multi-Cloud Implementation
 
-Yes! Your Cloud Cost Guardian can be extended to Azure, GCP, and IBM Cloud, because:
+Yes! Cloud Cost Guardian can be extended to Azure, GCP, and IBM Cloud because:
 - All major clouds provide cost and usage APIs (Azure Cost Management API, GCP Billing API, IBM Cloud Usage Reports).
 - You can write similar ingestion scripts for those APIs.
 - New Relic Flex supports custom integrations, so you can collect data from any cloud provider.
