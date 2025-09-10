@@ -23,30 +23,30 @@ With this integration, you can:
 
 ## 🏗️ Architecture
 
-+------------------------+
-| AWS Cost Explorer API |
-+----------+-------------+
-           |
-           v
-+---------------------------+
-| awscostfetcher.py (Python)|
-+---------------------------+
-           |
-           v
-  NDJSON events (daily cost)
-           |
-           v
-+---------------------------+
-| New Relic Flex Integration|
-+---------------------------+
-           |
-           v
-+---------------------------+
-|  New Relic Custom Events  |
-|      (eventType: CloudCost)|
-+---------------------------+
-           |
-           v
-+---------------------------+
-| New Relic Dashboards & Alerts |
-+---------------------------+
+- +------------------------+
+- | AWS Cost Explorer API |
+- +----------+-------------+
+-           |
+-           v
+- +---------------------------+
+- | awscostfetcher.py (Python)|
+- +---------------------------+
+-           |
+-           v
+-  NDJSON events (daily cost)
+-           |
+-           v
+- +---------------------------+
+- | New Relic Flex Integration|
+- +---------------------------+
+-            |
+-            v
+- +---------------------------+
+- |  New Relic Custom Events  |
+- |      (eventType: CloudCost)|
+- +---------------------------+
+-            |
+-            v
+- +---------------------------+
+- | New Relic Dashboards & Alerts |
+- +---------------------------+
