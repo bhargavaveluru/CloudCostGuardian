@@ -1,4 +1,4 @@
-# 🛡️ AWS Cloud Cost Guardian
+# 🛡️ Cloud Cost Guardian
 
 Automates the collection and ingestion of detailed AWS cost and usage data into New Relic, enabling enhanced cloud cost monitoring, real-time alerting, and powerful visualization.
 
