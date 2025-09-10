@@ -25,17 +25,17 @@ With this integration, you can:
 The EC2 instance where Flex is running should have an IAM Role attached that allows it to query AWS APIs.
 This IAM role should have permissions such as:
 
-- {
--     "Version": "2012-10-17",
--     "Statement": [
--         {
--             "Effect": "Allow",
--             "Principal": {
--                 "Service": "ec2.amazonaws.com"
--             },
--             "Action": "sts:AssumeRole"
--         }
--     ]
-- }
-
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "ec2.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 
