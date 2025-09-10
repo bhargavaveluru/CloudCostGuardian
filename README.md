@@ -39,6 +39,7 @@ This IAM role should have permissions such as:
         }
     ]
 }
+```
 
 ##🔧 Prerequisites
 
