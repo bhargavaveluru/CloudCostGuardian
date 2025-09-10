@@ -22,6 +22,7 @@ With this integration, you can:
 - ✅ Easy-to-build New Relic dashboards using NRQL queries.
 
 ## 🔐 IAM Role Setup
+
 The EC2 instance where Flex is running should have an IAM Role attached that allows it to query AWS APIs.
 This IAM role should have permissions such as:
 
@@ -38,4 +39,13 @@ This IAM role should have permissions such as:
         }
     ]
 }
+
+##🔧 Prerequisites
+
+- EC2 instance with IAM role attached.
+- Python3 installed with required libraries.
+- New Relic account.
+
+
+
 
