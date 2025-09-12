@@ -53,6 +53,14 @@ As files are placed in this repository, i have installed infrastructure agent an
 ```bash
  /etc/newrelic-infra/integrations.d/cloudcost.yml
 ```
+Further python script which pulls the data of the cloud cost is placed at 
+```bash
+/etc/newrelic-infra/integrations.d/cloudcost.yml
+```
+Try to execute to see the output of the python file
+```bash
+python3 /opt/cloudcost/scripts/awscostfetcher.py
+```
 
 ## 🚀 Scalability & Future Scope
 
