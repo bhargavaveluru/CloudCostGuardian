@@ -47,6 +47,13 @@ This IAM role should have permissions such as:
 - Python3 installed with required libraries.
 - New Relic account.
 
+## 🛠️ Installation & Setup Instructions
+As files are placed in this repository, i have installed infrastructure agent and deployed a flex configuration file at
+
+```bash
+ /etc/newrelic-infra/integrations.d/cloudcost.yml
+```
+
 ## 🚀 Scalability & Future Scope
 
 This solution is designed to scale beyond just cost data ingestion. It can be extended to include detailed insights into all AWS services in your subscription, such as:
@@ -55,7 +62,7 @@ This solution is designed to scale beyond just cost data ingestion. It can be ex
 - Usage metrics for services like RDS, Lambda, S3, and more
 - By leveraging New Relic Flex’s custom integrations, this platform can evolve into a comprehensive cloud resource and cost monitoring system, providing holistic visibility and enabling more granular optimization across your entire AWS environment.
 
-## Multi-Cloud Implementation
+## 🗺️ Multi-Cloud Implementation
 
 Yes! Cloud Cost Guardian can be extended to Azure, GCP, and IBM Cloud because:
 - All major clouds provide cost and usage APIs (Azure Cost Management API, GCP Billing API, IBM Cloud Usage Reports).
@@ -63,7 +70,7 @@ Yes! Cloud Cost Guardian can be extended to Azure, GCP, and IBM Cloud because:
 - New Relic Flex supports custom integrations, so you can collect data from any cloud provider.
 - This enables a multi-cloud cost monitoring solution.
 
-## Conclusion
+## 🙏 Conclusion
 
 Cloud Cost Guardian empowers teams to take control of their AWS cloud spending through automated cost and usage monitoring, real-time alerts, and insightful visualizations within New Relic. By extending this foundation, organizations can achieve comprehensive cost governance and operational visibility across their entire cloud environment.
 
