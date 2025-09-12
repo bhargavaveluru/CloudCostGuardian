@@ -48,19 +48,23 @@ This IAM role should have permissions such as:
 - New Relic account.
 
 ## 🛠️ Installation & Setup Instructions
-As files are placed in this repository, i have installed infrastructure agent and deployed a flex configuration file at
-
+- Install the New Relic Infrastructure Agent.
+- Deploy Flex configuration.
+  Files are placed at the following paths. 
 ```bash
  /etc/newrelic-infra/integrations.d/cloudcost.yml
 ```
-Further python script which pulls the data of the cloud cost is placed at 
+- Python script is placed at the following which pulls the AWS cost fetcher.
 ```bash
 /etc/newrelic-infra/integrations.d/cloudcost.yml
 ```
-Try to execute to see the output of the python file
+- Test script to validate the output.
 ```bash
 python3 /opt/cloudcost/scripts/awscostfetcher.py
 ```
+
+## 📈 Sample NRQL Queries
+
 
 ## 🚀 Scalability & Future Scope
 
