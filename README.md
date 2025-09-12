@@ -65,6 +65,18 @@ python3 /opt/cloudcost/scripts/awscostfetcher.py
 
 ## 📈 Sample NRQL Queries
 
+- please run the following NR Query to see if custom metric is ingested to New Relic.
+```sql
+SHOW eventTypes
+```
+- Basic NRQL Query to pull customized metrics
+```sql
+SELECT max(dailyCost) FROM CloudCost SINCE 1 day ago FACET service
+```
+```sql
+SELECT max(dailyCost) FROM CloudCost SINCE 1 day ago FACET service
+```
+
 
 ## 🚀 Scalability & Future Scope
 
